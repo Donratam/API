@@ -11,10 +11,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-20.04
-    permissions:
-      actions: read
-      contents: read
-      security-events: write
+   permissions:
+     actions: read
+     contents: read
+     security-events: writ
     steps:
       - uses: actions/checkout@v4
     
