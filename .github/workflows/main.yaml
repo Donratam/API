@@ -11,10 +11,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-20.04
-
+    permission:
+      action: read
+      contents: read
+      security-events: write
     steps:
       - uses: actions/checkout@v4
-
+    
       - name: Set up Python version
         uses: actions/setup-python@v4
         with:
